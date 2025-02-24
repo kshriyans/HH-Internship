@@ -1,7 +1,9 @@
 API endpoints-
   Signup
-   POST /api/user/signup
-     Body - {
+     
+     POST /api/user/signup
+     
+  Body - {
     "name" : "test",
     "email":"test@gmail.com",
     "password" : "test",
@@ -10,8 +12,10 @@ API endpoints-
     You can put role as admin or user
   
   Login
+    
     POST /api/user/login
-      Body - {
+  
+  Body - {
     "email":"test@gmail.com",
     "password" : "test"
 }
@@ -25,11 +29,14 @@ Fetch (All users)
 
 Delete (admin only)
   Headers - Authorization : Admin_JWT_token
-  DEL /api/user/delete/<Entry ID>
+  
+    DEL /api/user/delete/<Entry ID>
 
 Update (admin only)
   Headers - Authorization : Admin_JWT_token
-  PUT /api/user/update/<Entry ID>
+  
+    PUT /api/user/update/<Entry ID>
+  
   Body - {
     "name" : "test new",
     "email":"test@gmail.com",
